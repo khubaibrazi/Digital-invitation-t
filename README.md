@@ -1,48 +1,55 @@
 # Digital Wedding Invitation
 
-An interactive wedding invitation experience built as a modern web application with animated presentation, event details, a live countdown, and RSVP handling.
+A public, sanitized source version of an interactive wedding invitation built with Next.js, React, TypeScript, and an RSVP data model designed for Cloudflare D1.
 
-## Highlights
+## What It Demonstrates
 
-- Animated envelope-style opening experience
-- Live countdown to the event
-- Responsive event and venue information
-- RSVP form and API workflow
-- Database-backed response storage in the full application
-- Mobile-friendly presentation
+- Animated envelope-opening interaction
+- Live countdown
+- Responsive invitation UI
+- RSVP form state and submission flow
+- Server-side validation structure
+- Drizzle ORM schema for RSVP persistence
+- Cloudflare D1-oriented database design
+- Mobile and reduced-motion support
 
-## Technology
-
-The full project uses:
+## Tech Stack
 
 - Next.js
 - React
 - TypeScript
 - Drizzle ORM
-- Cloudflare D1
+- SQLite / Cloudflare D1 model
+- CSS
 
-## Public Source Archive
+## Project Structure
 
-This repository currently exposes the project as a downloadable source archive:
+```text
+app/
+├── api/rsvp/route.ts
+├── globals.css
+├── layout.tsx
+└── page.tsx
 
-`Taha_Laiba_Invitation_Source.zip`
+db/
+└── schema.ts
 
-The archive contains the application source used for the invitation experience.
+drizzle/
+└── 0000_create_rsvps.sql
+```
 
-## Application Structure
+## Privacy Note
 
-The project is organized around:
+This public portfolio repository intentionally removes private venue details and deployment-specific configuration from the original invitation project.
 
-- UI and invitation flow
-- Animated opening state
-- Countdown logic
-- Event information
-- RSVP submission
-- Database persistence
+## Run Locally
 
-## Portfolio Context
-
-This project demonstrates interactive frontend development, responsive design, state-driven UI, form handling, and integration between a modern React interface and a server-side RSVP workflow.
+```bash
+git clone https://github.com/khubaibrazi/Digital-invitation-t.git
+cd Digital-invitation-t
+npm install
+npm run dev
+```
 
 ## Author
 
