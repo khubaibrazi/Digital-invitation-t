@@ -1,0 +1,8 @@
+CREATE TABLE rsvps (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  name TEXT NOT NULL,
+  attendance TEXT NOT NULL,
+  guests INTEGER NOT NULL,
+  message TEXT,
+  created_at TEXT NOT NULL
+);
